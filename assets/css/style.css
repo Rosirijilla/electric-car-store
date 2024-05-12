@@ -10,7 +10,7 @@ nav {
   color: white;
 }
 
-nav .titulo {
+.titulo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@ nav .titulo {
   padding-top: 1rem;
 }
 
-nav .titulo img {
+.titulo img {
   width: 2rem;
   height: 2rem;
 }
@@ -39,7 +39,7 @@ nav ul {
   transform: scale(1.1);
 }
 
-.menu-navegacion {
+.m {
   grid-area: section;
 }
 
@@ -47,7 +47,7 @@ main {
   grid-area: main;
 }
 
-main .tarjeta {
+.tarjeta {
   width: 17rem;
   height: 22rem;
   border-radius: 2%;
@@ -61,12 +61,12 @@ main .tarjeta {
   -moz-box-shadow: -1px 0px 17px -3px rgba(0, 0, 0, 0.73);
 }
 
-main .tarjeta img {
+.tarjeta img {
   width: 14rem;
   height: 14rem;
 }
 
-main .tarjeta button {
+.tarjeta button {
   background-color: #002f6c;
   color: white;
   border: none;
@@ -87,7 +87,7 @@ footer {
   text-align: center;
 }
 
-footer .iconos {
+.iconos {
   display: flex;
   gap: 1rem;
   padding-bottom: 1rem;
@@ -126,9 +126,12 @@ footer .iconos {
 
   main {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr 1fr;
+  }
+
+  .cards {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 2rem;
-    row-gap: 1rem;
-    margin: 2rem;
   }
 }
