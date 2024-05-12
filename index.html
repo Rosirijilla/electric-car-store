@@ -1,110 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Electric Cars</title>
+		<!--Link Font Awesome-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+			integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!--Link Font Awesome-->
+		<link rel="stylesheet" href="./assets/css/reset.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link
+			rel="shortcut icon"
+			href="./assets/img/logo.png"
+			type="image/x-icon"
+		/>
+	</head>
+	<body>
+		<div class="grid-container">
+			<nav>
+				<div class="titulo">
+					<img src="./assets/img/logo.png" alt="Logo auto" />
+					<h1>Electric Cars</h1>
+					<i class="fa-solid fa-bars fa-lg icono-movil" style="color: #ffffff;"></i>
+				</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electric Cars</title>
-    <!--Link Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--Link Font Awesome-->
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
-</head>
+				<ul>
+					<li class="categoria">Inicio</li>
+					<li class="categoria">Catálogo</li>
+					<li class="categoria">Ofertas</li>
+					<li class="categoria">Contacto</li>
+				</ul>
+				
+			</nav>
+			<section class="menu-navegacion">
+				<p>Ordenar Por:</p>
+				<select id="cars">
+					<option value="volvo">Precio</option>
+					<option value="saab">Marca</option>
+					<option value="opel">Color</option>
+					<option value="audi">Modelo</option>
+				  </select>
+			</section>
+			<main>
+				<div class="cards">
+					<div class="tarjeta">
+						<img src="./assets/img/auto-1.jpg" alt="Auto1" />
+						<h4>Modelo de Auto: Blanco</h4>
+						<button>Ver más</button>
+					</div>
+					<div class="tarjeta">
+						<img src="./assets/img/auto-2.jpg" alt="Auto1" />
+						<h4>Modelo de Auto: Rojo</h4>
+						<button>Ver más</button>
+					</div>
+					<div class="tarjeta">
+						<img src="./assets/img/auto-3.jpg" alt="Auto1" />
+						<h4>Modelo de Auto: Verde</h4>
+						<button>Ver más</button>
+					</div>
+					<div class="tarjeta">
+						<img src="./assets/img/auto-4.jpg" alt="Auto1" />
+						<h4>Modelo de Auto: Naranja</h4>
+						<button>Ver más</button>
+					</div>
+					<div class="tarjeta">
+						<img src="./assets/img/auto-5.jpg" alt="Auto1" />
+						<h4>Modelo de Auto: Amarillo</h4>
+						<button>Ver más</button>
+					</div>
+					<div class="tarjeta">
+						<img src="./assets/img/auto-6.jpg" alt="Auto1" />
+						<h4>Modelo de Auto: Rosa</h4>
+						<button>Ver más</button>
+					</div>
+					<div class="tarjeta">
+						<img src="./assets/img/auto-7.jpg" alt="Auto1" />
+						<h4>Modelo de Auto: Morado</h4>
+						<button>Ver más</button>
+					</div>
+					<div class="tarjeta">
+						<img src="./assets/img/auto-8.jpg" alt="Auto1" />
+						<h4>Modelo de Auto: Azul</h4>
+						<button>Ver más</button>
+					</div>
+				</div>
+				<div class="paginacion">
+					<a href="#">&laquo;</a>
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">&raquo;</a>
+				</div>
+			</main>
+			<footer>
+				<div class="iconos">
+					<i class="fa-brands fa-facebook fa-lg" style="color: #ffffff"></i>
+					<i class="fa-brands fa-instagram fa-lg" style="color: #ffffff"></i>
+				</div>
+				<p>
+					Todos los derechos<br />
+					reservados
+				</p>
+			</footer>
+		</div>
 
-<body>
-    <div class="grid-container">
-
-        <nav>
-            <div class="titulo">
-                <img src="./assets/img/logo.png" alt="Logo auto">
-                <h1>Electric Cars</h1>
-            </div>
-
-            <ul>
-                <li class="categoria">Inicio</li>
-                <li class="categoria">Catálogo</li>
-                <li class="categoria">Ofertas</li>
-                <li class="categoria">Contacto</li>
-            </ul>
-        </nav>
-
-        <section class="menu-navegacion">
-            <div class="dropdown">
-                <button class="dropbtn">Opciones</button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-        </section>
-
-        <main>
-            <div class="cards">
-                <div class="tarjeta">
-                    <img src="./assets/img/auto-1.jpg" alt="Auto1">
-                    <h4>Modelo de Auto:1</h4>
-                    <button>Ver más</button>
-                </div>
-                <div class="tarjeta">
-                    <img src="./assets/img/auto-1.jpg" alt="Auto1">
-                    <h4>Modelo de Auto:1</h4>
-                    <button>Ver más</button>
-                </div>
-                <div class="tarjeta">
-                    <img src="./assets/img/auto-1.jpg" alt="Auto1">
-                    <h4>Modelo de Auto:1</h4>
-                    <button>Ver más</button>
-                </div>
-                <div class="tarjeta">
-                    <img src="./assets/img/auto-1.jpg" alt="Auto1">
-                    <h4>Modelo de Auto:1</h4>
-                    <button>Ver más</button>
-                </div>
-                <div class="tarjeta">
-                    <img src="./assets/img/auto-1.jpg" alt="Auto1">
-                    <h4>Modelo de Auto:1</h4>
-                    <button>Ver más</button>
-                </div>
-                <div class="tarjeta">
-                    <img src="./assets/img/auto-1.jpg" alt="Auto1">
-                    <h4>Modelo de Auto:1</h4>
-                    <button>Ver más</button>
-                </div>
-                <div class="tarjeta">
-                    <img src="./assets/img/auto-1.jpg" alt="Auto1">
-                    <h4>Modelo de Auto:1</h4>
-                    <button>Ver más</button>
-                </div>
-                <div class="tarjeta">
-                    <img src="./assets/img/auto-1.jpg" alt="Auto1">
-                    <h4>Modelo de Auto:1</h4>
-                    <button>Ver más</button>
-                </div>
-            </div>
-            
-            <div class="paginacion">
-                <a href="#">&laquo;</a>
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">&raquo;</a>
-            </div>
-        </main>
-
-        <footer>
-            <div class="iconos">
-                <i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i>
-                <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
-            </div>
-            <p>Todos los derechos<br> reservados</p>
-        </footer>
-    </div>
-
-</body>
-
+		<script src="./assets/js/script.js"></script>
+	</body>
 </html>
